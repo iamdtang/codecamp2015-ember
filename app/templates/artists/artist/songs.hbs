@@ -1,1 +1,11 @@
-{{outlet}}
+{{#each model.songs as |song|}}
+  <div class="song">
+    <h4>{{song.title}}</h4>
+    <div>
+      {{format-currency song.price}}
+    </div>
+    <div>
+      {{song.playCount}}
+    </div>
+  </div>
+{{/each}}
