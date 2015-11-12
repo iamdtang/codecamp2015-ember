@@ -1,11 +1,18 @@
-{{#each model.songs as |song|}}
-  <div class="song">
-    <h4>{{song.title}}</h4>
-    <div>
-      {{format-currency song.price}}
+{{#if artistHasSongs}}
+  {{#each sortedSongs as |song|}}
+    <div class="song">
+      <h4>{{song.title}}</h4>
+      <div>
+        {{format-currency song.price}}
+      </div>
+      <div>
+        {{song.playCount}}
+      </div>
+      {{#heart-like song=song like=(action "onLike" song)}}
+        <span>Like</span>
+      {{/heart-like}}
     </div>
-    <div>
-      {{song.playCount}}
-    </div>
-  </div>
-{{/each}}
+  {{/each}}
+{{else}}
+  <p>No songs have been added for this artist yet.</p>
+{{/if}}
