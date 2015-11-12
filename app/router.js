@@ -13,6 +13,7 @@ Router.map(function() {
       this.route('songs');
     });
   });
+  this.route('loading');
 });
 
 export default Router;
