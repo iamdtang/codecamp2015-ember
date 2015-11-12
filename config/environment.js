@@ -21,7 +21,7 @@ module.exports = function(environment) {
       'default-src': "'none'",
       'script-src': "'self'",
       'font-src': "'self'",
-      'connect-src': "'self' http://itp-api.herokuapp.com",
+      'connect-src': "'self' http://itp-api.herokuapp.com http://localhost:3000",
       'img-src': "'self'",
       'style-src': "'self'",
       'media-src': "'self'"
