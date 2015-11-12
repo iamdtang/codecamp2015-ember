@@ -1,16 +1,17 @@
 {{#if artistHasSongs}}
   {{#each sortedSongs as |song|}}
-    <div class="song">
-      <h4>{{song.title}}</h4>
-      <div>
-        {{format-currency song.price}}
+    <div class="card">
+      <div class="card-block">
+        <h4 class="card-title">{{song.title}}</h4>
+        <p class="card-text">
+          {{format-currency song.price}}
+          <br>
+          Play Count: {{song.playCount}}
+        </p>
+        {{#heart-like song=song like=(action "onLike" song)}}
+          <span>Like</span>
+        {{/heart-like}}
       </div>
-      <div>
-        {{song.playCount}}
-      </div>
-      {{#heart-like song=song like=(action "onLike" song)}}
-        <span>Like</span>
-      {{/heart-like}}
     </div>
   {{/each}}
 {{else}}

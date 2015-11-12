@@ -5,3 +5,20 @@
 .liked {
   color: red;
 }
+
+body {
+  background-color: #252830;
+  color: white;
+}
+
+header.my-page-header {
+  padding: 20px;
+}
+
+.card {
+  display: inline-block;
+  background-color: #1ca8dd;
+  padding: 15px;
+  width: 275px;
+  margin: 20px 20px 0 0;
+}

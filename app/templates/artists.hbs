@@ -1,8 +1,8 @@
 <div class="row">
-  <div class="col-sm-4">
-    <ul>
+  <div class="col-sm-2">
+    <ul class="list-group">
       {{#each model as |artist|}}
-        <li>
+        <li class="list-group-item">
           {{#link-to 'artists.artist.songs' artist.id}}
             {{artist.artistName}}
           {{/link-to}}
@@ -10,7 +10,7 @@
       {{/each}}
     </ul>
   </div>
-  <div class="col-sm-8">
+  <div class="col-sm-10">
     {{outlet}}
   </div>
 </div>
