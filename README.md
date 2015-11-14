@@ -1,5 +1,31 @@
 # Codecamp-ember
 
+## Order of Talk
+
+* explain directory structure, index.html, router, outlets
+* ember g route artists
+  * fill in artists template
+* API overview
+* ember g adapter application
+* ember g model artist
+* ember g model song
+* finish artists route model and template
+* ember g route artists/artist
+  * fill in model and template
+* ember g route artists/artist/songs
+  * fill in model and template
+* ember g controller artists/artist/songs
+  * artistHasSongs computed property
+  * sortedSongs computed property w/ sort macro
+* ember g helper format-currency
+* ember g component heart-like
+  * fill in template => actions
+  * pass action from controller to component?
+* ember g adapter artist
+* ember g serializer artist
+
+
+
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
