@@ -5,15 +5,6 @@ var Router = Ember.Router.extend({
   location: config.locationType
 });
 
-Router.map(function() {
-  this.route('artists', function() {
-    this.route('artist', {
-      path: ':id'
-    }, function() {
-      this.route('songs');
-    });
-  });
-  this.route('loading');
-});
+Router.map(function() {});
 
 export default Router;
